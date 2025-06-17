@@ -6,7 +6,7 @@ from datetime import datetime
 # Import Base from the database module.
 # Since models.py is in the 'backend' package, and database.py is also in 'backend',
 # we can use a direct import from the module name relative to the package.
-from backend.database import Base
+from database import Base
 
 class User(Base):
     __tablename__ = "users" # Name of the database table
