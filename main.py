@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 # Import components from the current package (backend) directly.
 # This works because you are running uvicorn from the 'backend' directory.
 from database import Base, engine, get_db
-from models import models # Imports the models module
+import models # Imports the models module
 from routes import auth, wallet # Imports the auth and wallet routers from the routes subpackage
 
 # Create the FastAPI app instance
